@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBoard</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  .font-poppins{
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+
+
+</head>
+<body class="font-poppins">
+  <div class="container  sm:mx-auto  ">
+
+    <header>
+      <div class="navbar bg-white rounded-lg shadow-lg p-2">
+        <div class="flex-1 ">
+          <img class="w-8" src="assets/logo.png" alt="">
+          <a class=" text-xl ml-4"> <span class="">Dev</span> <span class="text-[#00303C] font-bold">Board</span></a>
+        </div>
+        <button class="btn rounded-full font-bold text-xl"><img class="w-5" src="./assets/checkbox.png" alt="">23</button>
+        
+        <div class="w-8 rounded-full   ml-4">
+          <img class="bg-gray-200 p-1 rounded-full"
+            alt="theme"
+            src="./assets/theme-btn.png" />
+        </div>
+        
+      </div>
+
+    </header>
+
+    <section class="my-8  bg-white rounded-lg shadow-lg">
+
+      <div class="flex ">
+        <div class="w-[70%]">
+          <div class="grid grid-cols-4 gap-2 ">
+
+            <div class="col-span-1">
+              <div class="flex gap-3 bg-[#F4F7FF] p-6 rounded-lg">
+              <div>  <button class="    "><img class="w-6  bg-white rounded-xl p-1 " src="./assets/checkbox.png" alt=""></button></div>
+                <div>
+                  <h5 class="text-xs">Task Assigned </h5>
+                <h1 class="font-bold text-xl">05</h1>
+                </div>
+      
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div class="flex gap-6 bg-[#3752FD] p-6 rounded-lg  ">
+                <div>  <button class=" "><img class="w-10" src="./assets/board.png" alt=""></button></div>
+                  <div>
+                    <h5 class="text-white">Discover Something <br> New Today! </h5>
+                 
+                  </div>
+        
+                </div>
+            </div>
+            <div class="col-span-1">
+              <div class="flex gap-3 bg-[#F4F7FF] p-6 rounded-lg ">
+                <div>  <button class=" bg-white rounded-full  "><img class="w-5" src="./assets/checkbox.png" alt=""></button></div>
+                  <div>
+                    <h5 class="text-xs">Task Assigned </h5>
+                  <h1 class="font-bold text-xl">05</h1>
+                  </div>
+        
+                </div>
+            </div>
+            
+           
+            
+            
+    
+          </div>
+
+        </div>
+        <div class="w-[30%]"></div>
+      </div>
+
+     
+
+    </section>
+    
+
+  </div>
+
+  
+</body>
+</html>
