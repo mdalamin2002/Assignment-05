@@ -33,6 +33,28 @@ for (let i = 0; i < btns.length; i++) {
     });
   });
 }
+//  today date
 
-// const newDate = (new Date()).toString().split(' ')
-//   console.log(newDate[2]+ );
+document.getElementById("today").addEventListener("click", function () {
+  const dateElement = document.getElementById("today");
+  const date = new Date();
+  const options = {
+    weekday: "short",
+    month: "short",
+    day: "2-digit",
+    year: "numeric",
+  };
+  const formattedDate = date
+    .toLocaleDateString("en-US", options)
+    .replaceAll(",", "");
+  dateElement.innerText = formattedDate;
+});
+
+//them RGB color
+document.getElementById("theme").addEventListener("click", function () {
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  const rgbColor = `rgb(${red}, ${green}, ${blue})`;
+  document.body.style.backgroundColor = rgbColor;
+});
