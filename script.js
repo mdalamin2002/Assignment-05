@@ -50,6 +50,7 @@ document.getElementById("today").addEventListener("click", function () {
     day: "2-digit",
     year: "numeric",
   };
+  console.log("first");
   const formattedDate = date
     .toLocaleDateString("en-US", options)
     .replaceAll(",", "");
