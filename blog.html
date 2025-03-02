@@ -30,6 +30,60 @@
       <h1 class="text-2xl font-bold text-center  bg-gray-50 rounded-sm p-4">Blogs</h1>
       <h4 class="text-xl font-bold bg-white rounded-lg p-4 shadow-lg">Question-1: What are the different ways to select an element in the DOM?</h4>
       <hr class="border-t-2 border-dotted  border-[#babbbf]">
+      <p class="p-4 text-xl bg-white rounded-lg shadow-lg">Here are the different ways to select elements in the DOM: <br>
+        document.getElementById(): returns an element by its unique ID. <br>
+
+document.getElementsByClassName(): Selects elements by their class name & returns an HTMLCollection. <br>
+
+document.getElementsByTagName(): Selects elements by their tag name & returns an HTMLCollection. <br>
+
+document.querySelector(): Selects the first element that matches a specified CSS selector & returns an Element. <br>
+
+document.querySelectorAll(): Selects all elements that match a specified CSS selector & returns a NodeList.
+
+      </p>
+      <br>
+      <h4 class="text-xl font-bold bg-white rounded-lg p-4 shadow-lg">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h4>
+      <hr class="border-t-2 border-dotted  border-[#babbbf]">
+
+      <p class="p-4 text-xl bg-white rounded-lg shadow-lg">
+        innerHTML:  sets the HTML content of an  element, including any child element. <br>
+
+innerText:  sets the text content of an element, with some formatting and styling considerations and does not include any HTML child elements . <br>
+textContent: sets the all text content of an element, without any formatting or styling .
+
+      </p>
+      <br>
+      <h4 class="text-xl font-bold bg-white rounded-lg p-4 shadow-lg">Question-3: What is event delegation in the DOM?</h4>
+      <hr class="border-t-2 border-dotted  border-[#babbbf]">
+      <p class="p-4 text-xl bg-white rounded-lg shadow-lg">
+        
+        Event delegation in the DOM is a technique where a single event listener is attached to a parent element instead of multiple child elements. When an event occurs on a child element of the parent, it "bubbles up" the DOM tree,  allowing the parent's event listener to handle it.  This approach improves performance by reducing the number of event listeners and simplifies event handling, especially for dynamic content or elements that are added or removed dynamically. 
+      </p>
+      <br>
+      <h4 class="text-xl font-bold bg-white rounded-lg p-4 shadow-lg">Question-4: What is event bubbling in the DOM?</h4>
+      <hr class="border-t-2 border-dotted  border-[#babbbf]">
+      <p class="p-4 text-xl bg-white rounded-lg shadow-lg">
+        Event bubbling is the order in which events are handled in the DOM. moves from the innermost element to the outermost element.
+ When an event occurs on an element,  it first triggers the event handlers on that element, then on its parent, then its grandparent, and so on, up the DOM tree. can be stopped using event.stopPropagation() method.
+              </p>
+      <br>
+      <h4 class="text-xl font-bold bg-white rounded-lg p-4 shadow-lg">Question-5: How do you create, add, and remove elements using JavaScript?</h4>
+      <hr class="border-t-2 border-dotted  border-[#babbbf]">
+      <p class="p-4 text-xl bg-white rounded-lg shadow-lg">
+        Add: 
+        <br>
+        document.createElement('elementName') - Creates a new element of the specified type. <br>
+
+
+parentElement.appendChild(newElement) - Adds the new element as the last child of the parent element. <br>
+
+Remove: <br>
+
+
+parentElement.removeChild(childElement) - Removes a specific child element from the parent element.
+      </p>
+
 
   </div>
   <!-- <script src="./script.js"></script> -->

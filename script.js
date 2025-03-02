@@ -22,7 +22,7 @@ for (let i = 0; i < btns.length; i++) {
     const history = document.getElementById("history");
     const time = new Date().toLocaleTimeString();
     const p = document.createElement("p");
-    // p.classList.add("text-gray-600");
+
     p.innerHTML = `<p class="bg-[#e5e7eb] rounded-lg p-4"> You have Complete the ${taskAdd} at ${time} </p> <br>  `;
     history.appendChild(p);
     // clear  history delete
@@ -31,6 +31,12 @@ for (let i = 0; i < btns.length; i++) {
       event.preventDefault();
       history.innerHTML = "";
     });
+    // after task completed alert massage
+    const taskComplete = taskNumber - 1;
+
+    if (taskComplete === 0) {
+      alert("congrats!!! you have completed all the current task.");
+    }
   });
 }
 //  today date
